@@ -50,15 +50,17 @@ Multiplication operation can be viewed as the shifting and accumulation of parti
 
 <img src="Figures\acc_layer_signed6x6_00.png" alt="" style="height:350px;" />
 
-6×6 unsigned approximate multiplier:
+6×6 unsigned accurate multiplier:
 
 <img src="Figures\app_layer_unsigned6x6_00.png" alt="" style="height:350px;" />
 
 ### 2. Partial Product Reduction
 
-8x8 unsigned multiplier (suitable for both accurate and approximate type):
+The partial product count list of 8x8 unsigned multiplier (suitable for both accurate and approximate type):
 
-<img src="Figures\Fig7_00.png" alt="" style="height:135px;" />
+<img src="Figures\Fig7_00.png" alt="" style="height:120px;" />
+
+The Dadda tree structure of 8x8 unsigned multiplier (suitable for both accurate and approximate type):
 
 <img src="Figures\8x8_dadda_00.png" alt="" style="height:250px;" />
 
@@ -68,7 +70,7 @@ For final summation, the ripple carry adders with appropriate bit widths are sel
 
 ### 4. 16×24 App-25 Dse-1 signed approximate multiplier
 
-The configuration information for the design of a 16×24 App-25 Dse-1 signed approximate multiplier is shown below.
+The configuration information for the design of a combinatory 16×24 App-25 Dse-1 signed approximate multiplier is shown below.
 
 ```json
 {
@@ -76,9 +78,9 @@ The configuration information for the design of a 16×24 App-25 Dse-1 signed app
   "signed": [1],
   "app": [1],
   "apptype": [0, 0],
-  "appbits": [4],
+  "appbits": [25],
   "type": "baugh-wooley",
-  "combinatory": [0]
+  "combinatory": [1]
 }
 ```
 
