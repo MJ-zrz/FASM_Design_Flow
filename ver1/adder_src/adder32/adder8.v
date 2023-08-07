@@ -4,8 +4,7 @@ module adder8(
     input           [8:1]       B                   ,  
     input                       c0                  ,
     output          [8:1]       S                   ,
-    output                      c8                  ,
-    output                      sx                  
+    output                      c8                  
 );
 
     wire c4;
@@ -15,8 +14,7 @@ module adder8(
         .B              (B[4:1]     )       ,
         .c0             (c0         )       ,
         .S              (S[4:1]     )       ,
-        .c4             (c4         )       ,
-        .sx             ()       
+        .c4             (c4         )       
     );
 
     adder4 adder4_inst1(
@@ -24,8 +22,7 @@ module adder8(
         .B              (B[8:5]     )       ,
         .c0             (c4         )       ,
         .S              (S[8:5]     )       ,
-        .c4             (c8         )       ,
-        .sx             (sx         )              
+        .c4             (c8         )             
     );
 
 
