@@ -58,7 +58,7 @@ Multiplication operation can be viewed as the shifting and accumulation of parti
 
 8x8 unsigned multiplier (suitable for both accurate and approximate type):
 
-<img src="Figures\Fig7_00.png" alt="" style="height:120px;" />
+<img src="Figures\Fig7_00.png" alt="" style="height:135px;" />
 
 <img src="Figures\8x8_dadda_00.png" alt="" style="height:250px;" />
 
