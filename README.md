@@ -28,7 +28,7 @@ For usage, please first write configuration information into `/pycodes/config.js
 
 We have explored the design space of CU_typeA and CU_typeC approximate modules. After testing for 9 types of approximate modules named ranging from Dse-1 to Dse-9, we find Dse-1, Dse-2 and Dse-4 on the Pareto Frontier
 
-`"apptype"` chooses the approximate module type of CU_typeA and CU_typeC which make up the majority of computing units in our proposed multipliers. Value range: `[0, 0]`  -> CU_a_app1 and CU_c_app1 (Dse-1 modules); `[1, 1]`  -> CU_a_app2 and CU_c_app2 (Dse-2 modules); `[2, 2]`  -> CU_a_app2 and CU_c_app2 (Dse-4 modules) . For the approximate modules of CU_typeB and CU_typeD, they are chosen automatically according to the approximation level of the approximate multiplier. If  `app` == 0, this item does not matter
+`"apptype"` chooses the approximate module type of CU_typeA and CU_typeC which make up the majority of computing units in our proposed multipliers. Value range: `[0, 0]`  -> CU_typeA_dse1 and CU_typeC_dse1 (Dse-1 modules); `[1, 1]`  -> CU_typeA_dse2 and CU_typeC_dse2 (Dse-2 modules); `[2, 2]`  -> CU_typeA_dse4 and CU_typeC_dse4 (Dse-4 modules) . For the approximate modules of CU_typeB and CU_typeD, they are chosen automatically according to the approximation level of the approximate multiplier. If  `app` == 0, this item does not matter
 
 `"appbits"` sets the approximation level of the approximate multiplier.  If  `app` == 0, this item does not matter
 
@@ -50,7 +50,7 @@ Multiplication operation can be viewed as the shifting and accumulation of parti
 
 <img src="Figures\acc_layer_signed6x6_00.png" alt="" style="height:350px;" />
 
-6×6 unsigned accurate multiplier:
+6×6 unsigned approximate multiplier:
 
 <img src="Figures\app_layer_unsigned6x6_00.png" alt="" style="height:350px;" />
 
