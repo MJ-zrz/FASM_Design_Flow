@@ -4,11 +4,9 @@ module adder64(
     input           [64:1]      B                 ,
     input                       c0                ,
     output          [64:1]      S                 ,
-    output                      c64               ,
-    output                      sx                
+    output                      c64               
 );
 
-    wire sx1, sx2, sx3, sx4;
     wire c16, c32, c48;
 
     adder16 adder16_inst0(
@@ -16,8 +14,7 @@ module adder64(
         .B              (B[16:1]    )       ,
         .c0             (c0         )       ,
         .S              (S[16:1]    )       ,
-        .c16            (c16        )       ,
-        .sx             (sx1        )       
+        .c16            (c16        )       
     );
 
     adder16 adder16_inst1(
@@ -25,8 +22,7 @@ module adder64(
         .B              (B[32:17]   )       ,
         .c0             (c16        )       ,
         .S              (S[32:17]   )       ,
-        .c16            (c32        )       ,
-        .sx             (sx2        )       
+        .c16            (c32        )       
     );
 
     adder16 adder16_inst2(
@@ -34,8 +30,7 @@ module adder64(
         .B              (B[48:33]   )       ,
         .c0             (c32        )       ,
         .S              (S[48:33]   )       ,
-        .c16            (c48        )       ,
-        .sx             (sx3        )       
+        .c16            (c48        )       
     );
 
     adder16 adder16_inst3(
@@ -43,26 +38,7 @@ module adder64(
         .B              (B[64:49]   )       ,
         .c0             (c48        )       ,
         .S              (S[64:49]   )       ,
-        .c16            ()       ,
-        .sx             (sx4        )       
-    );
-
-    CC4 CC4_inst(
-        .c0             (c0             )       ,
-        .s1             (sx1            )       ,
-        .s2             (sx2            )       ,
-        .s3             (sx3            )       ,
-        .s4             (sx4            )       ,
-        .d1             (c0             )       ,
-        .d2             (c16            )       ,
-        .d3             (c32            )       ,
-        .d4             (c48            )       ,
-        .sx             (sx             )       ,
-        .sum            ()                      ,
-        .c1             ()                      ,
-        .c2             ()                      ,
-        .c3             ()                      ,
-        .c4             (c64            )               
+        .c16            (c64        ) 
     );
 
 
