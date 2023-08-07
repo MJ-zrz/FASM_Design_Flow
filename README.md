@@ -52,13 +52,13 @@ Multiplication operation can be viewed as the shifting and accumulation of parti
 
 6×6 unsigned accurate multiplier:
 
-<img src="Figures\app_layer_signed6x6_00.png" alt="" style="height:350px;" />
+<img src="Figures\app_layer_unsigned6x6_00.png" alt="" style="height:350px;" />
 
 ### 2. Partial Product Reduction
 
 8x8 unsigned multiplier (suitable for both accurate and approximate type):
 
-<img src="Figures\Fig7_00.png" alt="" style="height:150px;" />
+<img src="Figures\Fig7_00.png" alt="" style="height:120px;" />
 
 <img src="Figures\8x8_dadda_00.png" alt="" style="height:250px;" />
 
