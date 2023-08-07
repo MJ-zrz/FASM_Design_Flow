@@ -4,8 +4,7 @@ module adder4(
     input       [4:1]       B                   ,
     input                   c0                  ,
     output      [4:1]       S                   ,
-    output                  c4                  ,
-    output                  sx                  
+    output                  c4                  
 );
 
     wire s1, s2, s3, s4;
@@ -24,7 +23,7 @@ module adder4(
         .d2             (A[2]           )       ,
         .d3             (A[3]           )       ,
         .d4             (A[4]           )       ,
-        .sx             (sx             )       ,
+        .sx             ()       ,
         .sum            (S              )       ,
         .c1             ()                      ,
         .c2             ()                      ,
