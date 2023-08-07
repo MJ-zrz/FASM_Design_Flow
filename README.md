@@ -58,9 +58,9 @@ Multiplication operation can be viewed as the shifting and accumulation of parti
 
 8x8 unsigned multiplier (suitable for both accurate and approximate type):
 
-<img src="Figures\Fig7_00.png" alt="" style="height:350px;" />
+<img src="Figures\Fig7_00.png" alt="" style="height:150px;" />
 
-<img src="Figures\8x8_dadda_00.png" alt="" style="height:350px;" />
+<img src="Figures\8x8_dadda_00.png" alt="" style="height:250px;" />
 
 ### 3. Partial Product Final Summation
 
