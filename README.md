@@ -50,7 +50,7 @@ Multiplication operation can be viewed as the shifting and accumulation of parti
 
 <img src="Figures\acc_layer_signed6x6_00.png" alt="" style="height:350px;" />
 
-6×6 unsigned accurate multiplier:
+6×6 App-4 Dse-1 unsigned approximate multiplier:
 
 <img src="Figures\app_layer_unsigned6x6_00.png" alt="" style="height:350px;" />
 
