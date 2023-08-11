@@ -65,9 +65,15 @@ def gen_appunsignedLayer_configInfo(MultWidth_f, AppBits, AppAttributes):
                     configInfo_list[i]["ifLUT_b_app"]               =   0
         else:
             if (num_noapp != 0) or ((num_noapp == 0) and (i != num_app-1)):
+                # if AppBits % 2 == 0:
                 configInfo_list[i]["LUT_a_app"]                 =   AppBits - 2*i
-                configInfo_list[i]["LUT_a"]                     =   MultWidth_f - AppBits + 2*i - 2
+                configInfo_list[i]["LUT_a"]                     =   MultWidth_f - AppBits + 2*i - 1
                 configInfo_list[i]["ifLUT_b_app"]               =   0
+                # else:
+                #     configInfo_list[i]["LUT_a_app"]                 =   AppBits - 2*i
+                #     configInfo_list[i]["LUT_a"]                     =   MultWidth_f - AppBits + 2*i - 1
+                #     configInfo_list[i]["ifLUT_b_app"]               =   0
+    # print(configInfo_list)
     return configInfo_list
 
 
