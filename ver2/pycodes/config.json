@@ -1,0 +1,9 @@
+{
+    "width": [6, 6],
+    "signed": [0],
+    "app": [1],
+    "apptype": [1, 1],
+    "appbits": [4],
+    "type": "baugh-wooley",
+    "combinatory": [0]
+}
