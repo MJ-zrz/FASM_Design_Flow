@@ -1,6 +1,6 @@
 # HeFAMDesignFlow
 
-Here is the description of HeFAMDesignFlow. We propose an automatic design flow for high-efficiency FPGA-based approximate multipliers which are noted as **HeFAMs**. 
+We propose an automatic design flow for high-efficiency FPGA-based approximate multipliers which are noted as **HeFAMs**. 
 
 Ver1: We have realized the main function of the HeFAMDesignFlow.
 
